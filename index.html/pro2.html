@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KAnmani profile card</title>
+    <style>
+        .card{
+             width:250px;
+             padding:10px;
+            text-align:center;
+            background-color:lavender;
+            border-radius:25px;
+            color:navy;
+            transform:scale(1.05);
+            box-shadow:0 4px 20px rgb(180, 113, 228);
+            font-size:18px;
+            font-family:Italic;
+            position:center;
+        }
+        .card:hover{
+            transform:scale(1.20);
+            box-shadow:0 6px 18px rgb(135, 48, 198);
+
+        }
+        .card-button{
+            border:none;
+            border-radius:18px;
+            font-size:15px;
+            color:darkblue;
+            background-color:plum;
+        }
+        h1{
+            text-align:center;
+            color:rgb(202, 15, 161);
+        }
+        body{
+            background-color:lightblue;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+        .card-button:hover{
+            border:none;
+            background-color:pink;
+            color:red;
+            transform:scale(1.02);
+            box-shadow: 0 4px 20px rgb(202, 15, 161);
+        }
+        .profile-pic{
+            border-radius:50px;
+            width:120px;
+            height:120px;
+            object-fit:cover;
+            margin-top:15px; 
+        }
+        .card{
+            transform: scale(1.05) translateY(0px);
+             animation: float 1.8s cubic-bezier(0.6, 0.05, 0.2, 0.95) infinite;
+        }
+        .card:hover{
+            transform:scale(1.1);
+            box-shadow:0 0 20px hotpink,0 0 40px plum;
+            border:2px solid deeppink;
+        }
+        @keyframes float{
+            0% {transform:scale(1.20) translateY(0px); }
+            50% {transform:scale(1.20) translateY(-10px);}
+            100% { transform:scale(1.20) translateY(0px);}
+        }
+        
+    </style>
+    </head>
+    <body>
+        <div class="card">
+            <h1>Kanmani🎀</h1>
+            <img src="c:\Users\jayas\Downloads\WhatsApp Image 2025-07-09 at 19.08.12_70a7759f.jpg" class="profile-pic">
+            <p>I am kanmani i am super waste person now i am creating profile card</p>
+            <button class="card-button"> More about me</button>
+        </div>
+    </body>
+</html>

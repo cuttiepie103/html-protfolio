@@ -1,0 +1,35 @@
+<style>
+    body{
+        font-family:Arial,sans-serif;
+        font-style:italic;
+    }
+    h1{
+        text-align:center;
+        color:navy;
+    }
+    p{
+        font-family:Arial,sans-serif;
+        font-style:italic;
+        color:darkgreen;
+    }
+    img:hover{
+        transform:scale(1.05);
+        box-shadow:0 6px 20px rgb(210, 124, 197);
+    }
+    button{
+        display:block;
+        margin:30px auto;
+        background-color:lightpink;
+        color:black;
+        padding:20px 30px;
+        border:none;
+        border-radius:10px;
+        cursor:pointer;
+        font-size:14px;
+        font-family:Arial,sans-serif;
+        font-style:italic;
+    }
+    button:hover{
+        background-color:lightgreen;
+    }
+    </style>

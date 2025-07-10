@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kanmani's Cute Animated Profile</title>
+  <style>
+    body {
+      background: #f8e1f4;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .profile-card {
+      background: #fff0f6;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(255, 105, 180, 0.3);
+      padding: 30px;
+      width: 280px;
+      text-align: center;
+      cursor: pointer;
+      transition: box-shadow 0.4s ease, transform 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .profile-card:hover {
+      box-shadow:
+        0 0 15px #ff69b4,
+        0 0 30px #ff69b4,
+        0 0 45px #ff69b4;
+      transform: translateY(-10px);
+    }
+    .avatar {
+      font-size: 90px;
+      margin-bottom: 15px;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0);}
+      50% { transform: translateY(-15px);}
+    }
+    .name {
+      font-size: 28px;
+      font-weight: bold;
+      color: #d81e7e;
+      margin-bottom: 5px;
+    }
+    .tagline {
+      font-size: 16px;
+      color: #aa4d8f;
+      letter-spacing: 1.2px;
+    }
+    /* glowing border animation */
+    .profile-card::before {
+      content: "";
+      position: absolute;
+      top: -5px; left: -5px; right: -5px; bottom: -5px;
+      border-radius: 25px;
+      background: linear-gradient(270deg, #ff69b4, #ff85c0, #ff69b4);
+      background-size: 600% 600%;
+      animation: glow 8s ease infinite;
+      z-index: -1;
+      filter: blur(8px);
+      opacity: 0.7;
+    }
+    @keyframes glow {
+      0% { background-position: 0% 50%;}
+      50% { background-position: 100% 50%;}
+      100% { background-position: 0% 50%;}
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card" title="Hey, I'm Kanmani!">
+    <div class="avatar">🎀</div>
+    <div class="name">Kanmani</div>
+    <div class="tagline">✨ Crafting dreams with code & art ✨</div>
+  </div>
+</body>
+</html>
